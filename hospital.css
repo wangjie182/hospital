@@ -290,6 +290,7 @@ a:active {
     left: 66%;
     top: 246px;
 }
+
 h1 {
     display: inline-block;
     font-size: 24px;
@@ -309,7 +310,7 @@ fa {
     max-width: 1200px;
     height: 550px;
     position: relative;
-    top:439px;
+    top: 439px;
 }
 
 .checkmore {
@@ -393,6 +394,7 @@ fa {
     border: 1px solid #ddd;
     border-top: none;
 }
+
 .bottom {
     position: relative;
     bottom: -210px;
@@ -799,13 +801,12 @@ fa {
 .hide-preview {
     position: relative;
     right: 14px;
-    display: none;
-   
-    
+    opacity: 0;
+    transition: all 2s ease-in-out;
+    bottom: 143px;
 }
-.preview:hover .hide-preview{
-    display:block;
-    transition-delay: 1s;
-    transition-duration: 5s;
-    transform: translatey(-190px);
+
+.preview:hover .hide-preview {
+    opacity: 1;
+    bottom:190px; 
 }
