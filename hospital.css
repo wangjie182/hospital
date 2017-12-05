@@ -806,7 +806,7 @@ fa {
     bottom: 143px;
 }
 
-.preview:hover .hide-preview {
+.show-preview:hover .hide-preview {
     opacity: 1;
     bottom:190px; 
 }
