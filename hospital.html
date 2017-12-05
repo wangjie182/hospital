@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="hospital.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- 阿娇的部分顶部 -->
+    <div class='top'>
+        <div class='top-div1'>
+            <p>欢迎使用友好速搭，好的设计，就在这里</p>
+        </div>
+        <div class='top-div2'>
+            <a href='#####'>登录</a>|
+            <a href='#####'>免费注册</a>|
+            <a href='#####'>我的订单</a>|
+            <a href='#####'>个人中心</a>
+        </div>
+    </div>
+    <div class='middle'>
+        <div class='middle-left'>
+            <img style="margin:0 auto;display:block;" src='C:\Users\asus\Documents\yaodian\img/12.png'>
+        </div>
+        <div class='middle-middle'></div>
+        <div class="middle-right">
+            <i style='color:white;' class="fa fa-search fa-2x"></i>
+        </div>
+    </div>
+    <div class='foot'>
+        <div class='foot-left'>
+            <ul>
+                <li style='background:rgb(5, 121, 105);'>查看所有分类</li>
+                <li id="zhongxiyaoping">中西药品</li>
+                <li>滋补调养</li>
+                <li>隐形眼镜</li>
+                <li>维生素钙</li>
+                <li>肠胃用药</li>
+                <li>风湿骨科</li>
+                <li>五官用药</li>
+                <li>皮肤用药</li>
+                <li>母婴专区</li>
+                <li>医疗器械</li>
+            </ul>
+        </div>
+        <div id='foot-middle'>
+            <ul>
+                <li>
+                    <a href="http://yanjingcha.theme.yurl.vip/">首页</a>
+                </li>
+                <li>
+                    <a href="http://yanjingcha.theme.yurl.vip/">所有产品</a>
+                </li>
+                <li>
+                    <a href="http://yanjingcha.theme.yurl.vip/">优惠活动</a>
+                </li>
+                <li>
+                    <a href="http://yanjingcha.theme.yurl.vip/">感冒用药</a>
+                </li>
+                <li>
+                    <a href="http://yanjingcha.theme.yurl.vip/">滋养调补</a>
+                </li>
+                <li>
+                    <a href="http://yanjingcha.theme.yurl.vip/">药品常识</a>
+                </li>
+                <li>
+                    <a href="http://yanjingcha.theme.yurl.vip/">品牌故事</a>
+                </li>
+            </ul>
+        </div>
+        <div id="tabpic">
+            <div class="lunbo">
+                <img src='http://asset.ibanquan.com/asset/58b945550dd76c20f60000ae/index_slide_1?v=1488536917' style="display:block;width:100%;height:370px;"
+                />
+                <img src='http://asset.ibanquan.com/asset/58b945560dd76c20f60000b1/index_slide_2?v=1488536918' style="display:none;width:100%;height:370px;">
+                <img src='http://asset.ibanquan.com/asset/58b945560dd76c20f60000b4/index_slide_3?v=1488536918' style="display:none;width:100%;height:370px;"
+                />
+                <div class="change">
+                    <a name="tablink" onclick="div_tab(0)" style="color:#ff0000;">1</a>
+                    <a name="tablink" onclick="div_tab(1)" style="color:#0000ff;">2</a>
+                    <a name="tablink" onclick="div_tab(2)" style="color:#0000ff;">3</a>
+                </div>
+            </div>
+        </div>
+        <div id='foot-right'>
+            <br/>
+            <br/>
+            <ul>
+                <li>
+                    <img src="http://asset.ibanquan.com/asset/58b7d8213f8f906add0023c2/slide_right_icon_1?v=1488443425" alt="" />
+                    <p style="font-size:9px">正品保证</p>
+                </li>
+                <li>
+                    <img src="http://asset.ibanquan.com/asset/58b7d8213f8f906add0023c5/slide_right_icon_2?v=1488443425" alt="" />
+                    <p style="font-size:9px">厂家授权</p>
+                </li>
+                <li>
+                    <img src="http://asset.ibanquan.com/asset/58b7d8223f8f906add0023c8/slide_right_icon_3?v=1488443426" alt="" />
+                    <p style="font-size:9px">品质保障</p>
+                </li>
+                <li>
+                    <img src="http://asset.ibanquan.com/asset/58b7d8223f8f906add0023cb/slide_right_icon_4?v=1488443426" alt="" />
+                    <p style="font-size:9px">特色服务</p>
+                </li>
+                <li>
+                    <img src="http://asset.ibanquan.com/asset/58b7d8223f8f906add0023ce/slide_right_icon_5?v=1488443426" alt="" />
+                    <p style="font-size:9px">七天退换</p>
+                </li>
+                <li>
+                    <img src="http://asset.ibanquan.com/asset/58b7d8233f8f906add0023d1/slide_right_icon_6?v=1488443427" alt="" />
+                    <p style="font-size:9px">满58包邮</p>
+                </li>
+            </ul>
+            <a href="javascript:void(0);">
+                <img style="width:100%;height:150px;position:absolute;top:220px;left:0" src="http://asset.ibanquan.com/asset/58b91b1e0dd76c0147002548/slide_right_icon_7?v=1488526110"
+                    alt="" />
+            </a>
+        </div>
+
+        <div id="show">
+            <div class="show1-div1">
+                <span style='position:absolute;left:4%;top:20px;'>心脑血管</span>
+
+                <br/>
+                <br/>
+                <ul>
+                    <li>高血压 |</li>
+                    <li> 脑血管病 |</li>
+                    <li>冠心病 |</li>
+                    <li>高血脂 </li>
+                    <li>心绞痛 |</li>
+                    <li>静脉舒张 |</li>
+                    <li>心力衰竭 |</li>
+                    <li>血液病 </li>
+                </ul>
+            </div>
+            <div class='show1-div2'>
+                <span style='position:relative;left:16%;top:22px;'>神经系统</span>
+                <br/>
+                <br/>
+                <ul>
+                    <li>抑郁症 |</li>
+                    <li>癫痫 |</li>
+                    <li>帕金森 </li>
+                    <li>精神分裂</li>
+                    <li>老年痴呆 |</li>
+                    <li>中分 </li>
+                    <li>精神性疼痛 |</li>
+                    <li>多动症</li>
+                </ul>
+            </div>
+            <div class='show1-div3'>
+
+            </div>
+            <div class='show1-div4'></div>
+            <div class='show1-div5'></div>
+            <div class='show1-div6'></div>
+            <div class='show1-div7'>
+                <img src='http://asset.ibanquan.com/middle/32426/c/454/595609bf06898776e50000ab/index_nav_img_1?v=1498810815'>
+            </div>
+            <div class='show1-div8'>
+                <img src='http://asset.ibanquan.com/middle/32426/c/454/595609bf06898776e50000ae/index_nav_img_2?v=1498810815'>
+            </div>
+            <div class='show1-div9'>
+                <img src='http://asset.ibanquan.com/middle/32426/c/454/595609bf06898776e50000b1/index_nav_img_3?v=1498810815'>
+            </div>
+        </div>
+    </div>
+    <!-- 阿娇的部分底部 -->
+            <!-- 保健区顶部 -->
+            <div class="mypart">
+                <h1>保健养生佳品</h1>
+                <a href="javascript:void(0);" class="checkmore">查看更多></a>
+                <div class="content-image">
+                    <!-- 左边图片大图顶部 -->
+                    <div class="content-left">
+                        <a href='http://yanjingcha.theme.yurl.vip/types/t000002'>
+    
+                            <img src='image\滋补调理，美容养颜.png ' class="image-left">
+                        </a>
+                    </div>
+                    <!-- 左边图片大图底部 -->
+                    <!-- 中间两个并列稍大图顶部 -->
+                    <div class="content-center">
+                        <a href='http://yanjingcha.theme.yurl.vip/types/t000002'>
+                            <img src='image\1.1东阿阿胶.png ' class="image-top">
+                        </a>
+                        <a href='http://yanjingcha.theme.yurl.vip/types/t000002'>
+    
+                            <img src='image\2.1益安宁丸.png ' class="image-bottom">
+                        </a>
+                    </div>
+                    <!-- 中间两个并列稍大图底部 -->
+                    <!-- 右边四个小图顶部 -->
+                    <div class="content-right">
+                        <a href='http://yanjingcha.theme.yurl.vip/types/t000002'>
+                            <img src='image\1.2人参养荣丸.png' class="image-top">
+                        </a>
+                        <a href='http://yanjingcha.theme.yurl.vip/types/t000002'>
+                            <img src='image\1.3补钙专家钙尔奇.png' class="image-top">
+                        </a>
+                        <a href='http://yanjingcha.theme.yurl.vip/types/t000002'>
+                            <img src='image\2.2脑心舒口服液.png ' class="image-bottom">
+                        </a>
+                        <a href='http://yanjingcha.theme.yurl.vip/types/t000002'>
+                            <img src='image\2.3益母草颗粒.png ' class="image-bottom">
+                        </a>
+                    </div>
+                    <!-- 右边四个小图底部 -->
+                </div>
+            </div>
+            <!-- 保健区底部 -->
+            <!-- 热门品牌顶部 -->
+            <div class="mypart">
+                <h1>热门品牌</h1>
+                <a href="javascript:void(0);" class="checkmore">查看更多></a>
+                <div class="content-image">
+                    <!-- 品牌图片展示区顶部 -->
+                    <div class="content-brand">
+                        <!-- 品牌第一行顶部 -->
+                        <a href='http://yanjingcha.theme.yurl.vip/vendors/v000001'>
+                            <img src='image\3.1三九医药.png' class="image-lefttop">
+                        </a>
+                        <a href='http://yanjingcha.theme.yurl.vip/vendors/v000004'>
+                            <img src='image\3.2北京同仁堂.png' class="image-top">
+                        </a>
+                        <a href='http://yanjingcha.theme.yurl.vip/vendors/v000002'>
+                            <img src='image\3.3贵州百灵.png' class="image-top">
+                        </a>
+                        <a href='http://yanjingcha.theme.yurl.vip/vendors/products'>
+                            <img src='image\3.4仁和药业.png' class="image-top">
+                        </a>
+                        <a href='http://yanjingcha.theme.yurl.vip/vendors/products'>
+                            <img src='image\3.5STARWOOD.png' class="image-top">
+                        </a>
+                        <!-- 品牌第一行底部 -->
+                        <!-- 品牌第二行顶部 -->
+                        <a href='http://yanjingcha.theme.yurl.vip/vendors/v000008'>
+                            <img src='image\4.1云南白药.png' class="image-leftbottom">
+                        </a>
+                        <a href='http://yanjingcha.theme.yurl.vip/vendors/products'>
+                            <img src='image\4.2九芝堂.png' class="image-bottom">
+                        </a>
+                        <a href='http://yanjingcha.theme.yurl.vip/vendors/products'>
+                            <img src='image\4.3渝诚医药.png' class="image-bottom">
+                        </a>
+                        <a href='http://yanjingcha.theme.yurl.vip/vendors/products'>
+                            <img src='image\4.4白云山.png' class="image-bottom">
+                        </a>
+                        <a href='http://yanjingcha.theme.yurl.vip/vendors/products'>
+                            <img src='image\4.5东阿阿胶.png' class="image-bottom">
+                        </a>
+                        <!-- 品牌第二行底部 -->
+                    </div>
+                    <!-- 品牌图片展示区顶部 -->
+                </div>
+            </div>
+            <!-- 热门品牌底部 -->
+    <div class="bottom">
+        <!-- 底部的上半部分 -->
+        <div class="footer1">
+            <div class="width1200">
+                <div class="content1-top">
+                    <div class="box-bottom1">
+                        <!-- 上半部分的顶部 -->
+                        <div class="box-bottom1-top">
+                            <ul>
+                                <li>
+                                    <img src="image/footer_top_icon_1.png">
+                                    <div>
+                                        <p class="text1">正品保证</p>
+                                        <p class="text2">国家认证&nbsp正规合法</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="image/footer_top_icon_2.png">
+                                    <div>
+                                        <p class="text1">厂家授权</p>
+                                        <p class="text2">厂家授权&nbsp正品渠道</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="image/footer_top_icon_3.png">
+                                    <div>
+                                        <p class="text1">品质优良</p>
+                                        <p class="text2">药品监控到位</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="image/footer_top_icon_4.png">
+                                    <div>
+                                        <p class="text1">特色服务</p>
+                                        <p class="text2">24小时售后服务</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="image/footer_top_icon_5.png">
+                                    <div>
+                                        <p class="text1">7天退换货</p>
+                                        <p class="text2">七天无理由退换货</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="image/footer_top_icon_6.png">
+                                    <div>
+                                        <p class="text1">满58元包邮</p>
+                                        <p class="text2">全场满58元包邮</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 上半部分的底部 -->
+            <div class="content1-bottom">
+                <div class="box-bottom1-bottom">
+                    <!-- 上半部分底部的左边区域 -->
+                    <div class="purchase">
+                        <div class="weixin">
+                            <span>微信购药</span>
+                            <img src="image/weixin.png" alt="">
+                            <span>扫一扫领优惠券</span>
+                        </div>
+                        <div class="phone">
+                            <span>手机购药</span>
+                            <img src="image/zhifubao.png" alt="">
+                            <span>APP首单减10元</span>
+                        </div>
+                    </div>
+                    <!-- 中间区域 -->
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)" class="list-title">店铺指南</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">购物流程</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">会员等级</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">积分规则</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">常见问题</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)" class="list-title">配送到付</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">配送范围</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">隐私配送</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">商品验收</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">顺丰到付</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a class="list-title" href="javascript:void(0)">支付方式</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">货到付款</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">微信支付</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">网上支付</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">银行转账</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a class="list-title" href="javascript:void(0)">售后服务</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">退换流程</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">退后政策</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">退款流程</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">换货指南</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a class="list-title" href="javascript:void(0)">特色服务</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">会员俱乐部</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">投诉建议</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">用药咨询</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">免责声明</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 右边区域 -->
+                    <div class="hotline">
+                        <div class="hotline-order">
+                            <p class=hotline-title>订购热线</p>
+                            <p class="hotline-number">400-800-222</p>
+                            <p class="hotline-time">服务时间：08:30-23:00</p>
+                        </div>
+                        <div class="hotline-aftersale">
+                            <p class="hotline-title">售后热线</p>
+                            <p class="hotline-number">020-12345678</p>
+                            <p class="hotline-time">服务时间：09:00-22:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 底部的下半部分 -->
+        <div class="footer2">
+            <div class="content2">
+                <div class="box-bottom2">
+                    <!-- 下半部分的左边区域 -->
+                    <div class="box-bottom2-left">
+                        <p class="font">© 2017 youhaosuda.com All rights reserved.</p>
+                        <div class="kuaijiezhifu">
+                            <ul>
+                                <li title="微信支付">
+                                    <img src="image/weixinzhifu.png">
+                                </li>
+                                <li title="支付宝支付">
+                                    <img src="image/zhifubaozhifu.png">
+                                </li>
+                                <li title="百度钱包">
+                                    <img src="image/baiduqianbao.png">
+                                </li>
+                                <li title="财付通">
+                                    <img src="image/caifutong.png">
+                                </li>
+                                <li title="快钱">
+                                    <img src="image/kuaiqian.png">
+                                </li>
+                                <li title="货到付款">
+                                    <img src="image/huodaofukuan.png">
+                                </li>
+                                <li title="银行卡">
+                                    <img src="image/yinhangka.png">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 下半部分的右边区域 -->
+                    <div class="box-bottom2-right">
+                        <ul>
+                            <li>
+                                <a class="Icon1" href="http://yanjingcha.theme.yurl.vip/">
+                                    <img src="image/kexinlianmeng.png">
+                                </a>
+                                <p>
+                                    可信联盟
+                                    <br> 身份验证
+                                </p>
+                            </li>
+                            <li>
+                                <a class="Icon2" href="http://yanjingcha.theme.yurl.vip/">
+                                    <img src="image/gongshangwangjian.png">
+                                </a>
+                                <p>
+                                    工商网监
+                                    <br> 电子标识
+                                </p>
+                            </li>
+                            <li>
+                                <a class="Icon2" href="http://yanjingcha.theme.yurl.vip/">
+                                    <img src="image/anquanlianmeng.png">
+                                </a>
+                                <p>
+                                    安全联盟
+                                    <br> 实名认证
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 右侧导航区顶部 -->
+    <div class="rightnav">
+        <!-- 导航内容区顶部 -->
+        <div class="content-nav">
+            <!-- 购物情况导航区顶部 -->
+            <div class="nav-shop" id="navshop">
+                <a class="shoplink" href="http://yanjingcha.theme.yurl.vip/cart">
+                    <span class="fa fa-2x fa-cart-plus" aria-hidden="true"></span>
+                    <p>购物车</p>
+                    <b class='shopnum'>0</b>
+                </a>
+            </div>
+            <div class="prowindow" id="prowindow">
+                <div class="prowindow-top">
+                    <p>最近加入的宝贝</p>
+                </div>
+                <div class="prowindow-nav">
+                    <p class="nav-text1">共0件商品</p>
+                    <p class="nav-text2">总计：0</p>
+                </div>
+                <div class="prowindow-pay">
+                    <a href="#">去结算</a>
+                </div>
+                <div class="prowindow-select">
+                    <a>
+                        <img src="image/smile.png">
+                    </a>
+                    <p>亲，您还没有添加宝贝</p>
+                    <!-- <br> -->
+                    <p>赶快去挑选宝贝吧</p>
+                </div>
+            </div>
+            <!-- 购物情况导航区底部 -->
+            <!-- 联系客服区顶部 -->
+            <div class="nav-service">
+                <a class="link" href="http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes" title="联系客服-QQ号码:">
+                    <span class="fa fa-qq fa-1g " aria-hidden="true"></span>
+                </a>
+                <a class="link" title="微信客服" id="custsev">
+                    <span class="fa fa-weixin fa-1g" aria-hidden="true"></span>
+                </a>
+                <div class="weixin-service" id="wxsev">
+                    <img src="image/weixinkefu.png" alt="微信客服二维码">
+                </div>
+            </div>
+            <!-- 联系客服区底部 -->
+            <!-- 返回区顶部 -->
+            <div class="backtop">
+                <a class="link" href="http://yanjingcha.theme.yurl.vip/">
+                    <span class="fa fa-arrow-left  fa-rotate-90" aria-hidden="true"></span>
+
+                </a>
+                <p>top</p>
+            </div>
+            <!-- 返回区底部 -->
+
+        </div>
+        <!-- 导航内容区底部 -->
+    </div>
+    <!-- 右侧导航区底部 -->
+    <!-- 手机预览区顶部 -->
+    <div class="preview ">
+        <div id="show-preview">
+            <i class="fa fa-mobile fa-3x" aria-hidden="true"></i>
+            <span class="content-preview " aria-hidden="true">
+                预览手机端
+            </span>
+        </div>
+        <img id="hide-preview" class="hide-preview" src="image/预览手机.png" />
+    </div>
+    <!-- 手机预览区底部 -->
+</body>
+<script src="hospital.js"></script>
+
+</html>
