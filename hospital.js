@@ -63,15 +63,6 @@
     navshop.onmouseout = function () {
         prowindow.style.display = "none";
     }
-    // 底部手机预览效果
-    showpreview.onmouseover = function () {
-
-        hidepreview.style.display = "block";
-    }
-    showpreview.onmouseout = function () {
-
-        hidepreview.style.display = "none";
-
-    }
+    
 
 }

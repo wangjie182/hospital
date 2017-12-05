@@ -800,6 +800,11 @@ fa {
     position: relative;
     right: 14px;
     display: none;
+   
+    
+}
+.preview:hover .hide-preview{
+    display:block;
     transition-delay: 1s;
     transition-duration: 5s;
     transform: translatey(-190px);
