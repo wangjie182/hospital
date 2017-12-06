@@ -801,13 +801,8 @@ fa {
 .hide-preview {
     position: relative;
     right: 14px;
-    /* opacity: 0; */
     display: none;
     transition: all 2s ease-in-out;
     bottom: 143px;
 }
 
-/* .show-preview:hover+.hide-preview {
-    opacity: 1;
-    bottom:190px; 
-} */

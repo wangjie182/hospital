@@ -68,21 +68,22 @@ window.onload = function () {
     $(document).ready(function () {
 
         $(".show-preview").mouseenter(function () {
-            $(".hide-preview").show(600, function (){
-                $(".hide-preview")                   
+            $(".hide-preview").show(200, function () {
+                $(".hide-preview")
+                    .css('opacity', '0.5');
+            });
+            $(".hide-preview").show(200, function () {
+                $(".hide-preview")
                     .css('bottom', '190px')
-                    .css('opacity', 1);
-                    console.log(this);
+                    .css('opacity', '1');
             });
 
-            // .css('display', 'block')
         });
         $(".show-preview").mouseleave(function () {
             $(".hide-preview")
                 .css('bottom', '143px')
-                .hide(1600)
-                .css('opacity', 0);
-            // .css('display', 'none')
+                .hide(900)
+                .css('opacity', '0.5');
         });
     });
 }
