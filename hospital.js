@@ -68,11 +68,11 @@ window.onload = function () {
     $(document).ready(function () {
 
         $(".show-preview").mouseenter(function () {
-            $(".hide-preview").show(200, function () {
+            $(".hide-preview").show( function () {
                 $(".hide-preview")
-                    .css('opacity', '0.5');
+                    .css('opacity', '0');
             });
-            $(".hide-preview").show(200, function () {
+            $(".hide-preview").show( function () {
                 $(".hide-preview")
                     .css('bottom', '190px')
                     .css('opacity', '1');
@@ -83,7 +83,7 @@ window.onload = function () {
             $(".hide-preview")
                 .css('bottom', '143px')
                 .hide(900)
-                .css('opacity', '0.5');
+                .css('opacity', '0');
         });
     });
 }
